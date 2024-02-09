@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mijn eerste pagina</title>
+
+        <style>
+            /* Tag selector*/
+            p  
+            {color:rgb(4, 96, 66);}
+
+            img
+            {border: 10px solid purple;}
+
+            /*Class selector*/
+            .header2 { 
+                color: gold;}
+
+            /* ID selector*/
+            #plaatje2
+            {border: 8px dashed orange;
+            background-color: aqua;
+            }
+
+        </style>
+
+        <script>
+            // Commentaar
+            /* 
+                Dit is ook commentaar, maar wat langer en uitgebreider 
+            */ 
+
+            var a;    //Declaration
+            a = 6;    // Assignment 
+            var a;
+            a = 12; 
+            // hier overschrijf je dan opnieuw de waarde 
+            // dit kun je meerdere keren declareren, daarom is let beter beschermt tegen fouten
+
+            let b; 
+            /* error kun je zien met een rode streep in de preview of de scroll balk 
+            bij een error dan laat het de code tot de error > stopt javascript 
+             let b; dit mag je niet opnieuw declareren > dit is dus beter dan var */
+
+            let c = "Vedra"; //String 
+            // double quote > shift + enkele ' (naast enter)
+
+            // Alert > soort van pop-up bijvoorbeeld alert(a) > stopt er voor dat de pagina even stopt met laden
+            // alert('De waarde van a = ' + a); 
+
+            // Console
+            console.log('De waarde van b = ' + b)
+            // je hebt geen ; nodig voor javascript als er na het command geen nieuwe command wordt gegeven
+
+            let additiontest = a + 24; 
+            // wat ook kan: = a + 24 + (2 +3) etc. elke wiskundige berekening
+            console.log(additiontest);
+
+            /* Andere operations: 
+            addition + 
+            Subtraction - 
+            Devide / 
+            Multiply * 
+            Increment a++ (verhoog de waarde met 1) ipv a = a + 1; */ 
+
+            function additiontestfunction() {
+                let getaltest = 12 * 36.4;
+                alert(getaltest);
+            }
+
+        </script>
+
+
+    </head>
+    <body>
+        <!--Headers-->
+        <h1>Mijn eerste pagina</h1>
+        <h2 class="header2">Header 2</h2>
+
+        <!--Teksten-->
+        <p>Paragraaf 1</p>
+
+        <span style="color:blueviolet;">Span 1</span>
+        <span>Span 2</span>
+
+        <br>
+        <img src="https://bambooimport.com/cdn/shop/articles/pandabeer-scaled.jpg?v=1668091796&width=1500">
+        <br>
+        <img id="plaatje2" src="panda.jpg" width="500"    height="500">
+
+        <a href="https://www.w3schools.com">Ga naar website</a>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+
+    <ol>
+        <li>Item 1 - Ordered List</li>
+        <li>Item 2 - Ordered List</li>
+
+    </ol>
+
+    <table>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+    </table>
+
+    <button type="button" onclick="additiontestfunction()"> 
+        Click me
+    </button>
+
+    </body>
+    
+</html>
